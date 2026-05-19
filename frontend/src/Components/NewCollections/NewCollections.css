@@ -3,14 +3,12 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-margin-bottom: 100px;
-    
+    margin-bottom: 100px;
 }
 .newcollections h1{
     color: #171717;
     font-size:40px;
     font-weight: 600;
-
 }
 .newcollections hr{
     width: 200px;
@@ -23,4 +21,58 @@ margin-bottom: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
+}
+
+@media (max-width: 1280px) {
+    .newcollections h1 {
+        font-size: 36px;
+    }
+    .collections {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .newcollections {
+        padding: 30px 15px;
+    }
+    .newcollections h1 {
+        font-size: 32px;
+    }
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .newcollections {
+        padding: 25px 15px;
+        margin-bottom: 70px;
+    }
+    .newcollections h1 {
+        font-size: 28px;
+    }
+    .collections {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .newcollections {
+        padding: 20px 10px;
+        margin-bottom: 50px;
+    }
+    .newcollections h1 {
+        font-size: 24px;
+    }
+    .newcollections hr {
+        width: 150px;
+    }
+    .collections {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 30px;
+    }
 }

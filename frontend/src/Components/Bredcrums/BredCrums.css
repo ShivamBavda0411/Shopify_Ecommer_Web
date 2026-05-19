@@ -10,3 +10,18 @@
     margin-bottom: 30px;
     text-transform: capitalize;
 }
+
+@media (max-width: 768px) {
+    .bredcrums {
+        font-size: 14px;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bredcrums {
+        font-size: 12px;
+        gap: 4px;
+        padding: 0 10px;
+    }
+}
